@@ -1,11 +1,10 @@
-import Link from "next/link";
+import Hero from "@/modules/home/components/Hero";
 
 const HomePage = () => {
   return (
-    <>
-      <h1>Home</h1>
-      <Link href="/about">About</Link>
-    </>
+    <main>
+      <Hero />
+    </main>
   );
 };
 
