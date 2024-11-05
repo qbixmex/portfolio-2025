@@ -1,5 +1,5 @@
 #nav-container {
-  @apply flex justify-center items-center relative top-5;
+  @apply flex justify-center items-center fixed top-5 w-full;
 }
 
 #nav {

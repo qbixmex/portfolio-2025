@@ -7,3 +7,9 @@
     @apply bg-stone-900 text-gray-50 antialiased font-sans;
   }
 }
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
