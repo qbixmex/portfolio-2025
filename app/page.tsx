@@ -1,4 +1,5 @@
-import { Header, Hero } from "@/modules/home";
+import { Header } from "@/modules/home";
+import Hero from "@/modules/home/components/Hero";
 
 const HomePage = () => {
   return (
