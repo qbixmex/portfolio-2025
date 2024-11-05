@@ -1,5 +1,5 @@
 import { render, screen, within } from '@testing-library/react';
-import Hero from '@/modules/home/components/Hero';
+import Hero from '@/modules/home/sections/Hero';
  
 describe('Home Page', () => {
   test('should render the main content', () => {
