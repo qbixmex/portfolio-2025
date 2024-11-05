@@ -1,19 +1,22 @@
 {
   "name": "portfolio",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "test": "vitest"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "framer-motion": "^11.11.11",
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028"
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -28,6 +31,7 @@
     "eslint-config-next": "15.0.2",
     "jsdom": "^25.0.1",
     "postcss": "^8",
+    "postcss-load-config": "^6.0.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5",
     "vite-tsconfig-paths": "^5.1.0",

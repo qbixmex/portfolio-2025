@@ -1,9 +1,9 @@
-import Hero from "@/modules/home/components/Hero";
+import { Header } from "@/modules/home";
 
 const HomePage = () => {
   return (
     <main>
-      <Hero />
+      <Header />
     </main>
   );
 };
