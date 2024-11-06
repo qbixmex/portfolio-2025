@@ -1,0 +1,54 @@
+#hero {
+  @apply py-32 md:py-48 lg:py-60;
+}
+
+.emoji-buttons {
+  @apply flex flex-col items-center;
+}
+
+.memoji-image {
+  @apply size-[200px];
+}
+
+.status {
+  @apply bg-green-950 border border-green-900 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg;
+
+  & .background {
+    @apply bg-emerald-500 size-2.5 rounded-full;
+  }
+  
+  & .text {
+    @apply text-sm font-medium;
+  }
+}
+
+.info {
+  @apply max-w-lg mx-auto;
+
+  & .heading {
+    @apply font-serif text-3xl md:text-5xl text-center pt-8 tracking-wide;
+  }
+  
+  & .description {
+    @apply mt-4 text-center text-white/60 italic md:text-lg;
+  }
+}
+
+.buttons {
+  @apply flex flex-col md:flex-row justify-center items-center mt-8 gap-4;
+  & .explore {
+    @apply inline-flex items-center gap-2 border border-gray-400 px-6 h-12 rounded-xl hover:bg-white/20 hover:text-white transition-colors duration-300 ease-in-out;
+    & .icon {
+      @apply size-4;
+    }
+    & span {
+      @apply font-semibold;
+    }
+  }
+  & .connect {
+    @apply inline-flex items-center gap-2 border border-emerald-500 bg-emerald-900 hover:bg-emerald-700 text-gray-50 hover:text-gray-100 px-6 h-12 rounded-xl transition-colors duration-300 ease-in-out;
+  }
+  & span {
+    @apply font-semibold;
+  }
+}
