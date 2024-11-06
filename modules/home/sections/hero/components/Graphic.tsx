@@ -23,6 +23,7 @@ const Graphic: FC<Props> = ({
 }) => {
 
   const baseClasses = 'animate-pulse';
+
   const baseSVGColors = {
     "text-gray-500": color === "gray",
     "text-emerald-700": color === "green",
@@ -51,17 +52,24 @@ const Graphic: FC<Props> = ({
   return (
     <>
       {(type === "star") && (
-        <StarIcon style={baseStyles} className={clsx(baseClasses, baseSVGColors)} />
+        <StarIcon
+          style={baseStyles}
+          className={clsx(baseClasses, baseSVGColors)}
+        />
       )}
 
       {(type === "sparkle") && (
-        <SparkleIcon style={baseStyles} className={clsx(baseClasses, baseSVGColors)} />
+        <SparkleIcon
+          style={baseStyles}
+          className={clsx(baseClasses, baseSVGColors)}
+        />
       )}
 
       {(type === "circle") && (
-        <div style={baseStyles}
-        className={clsx(baseClasses, baseDivColors)}
-      ></div>
+        <div
+          style={baseStyles}
+          className={clsx(baseClasses, baseDivColors)}
+        ></div>
       )}
     </>
   );
