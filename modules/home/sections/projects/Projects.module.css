@@ -1,0 +1,79 @@
+#projects {
+  @apply pb-16;
+}
+
+.subHeadingWrapper {
+  @apply flex justify-center;
+}
+
+.subHeading {
+  @apply uppercase font-semibold tracking-widest
+    bg-gradient-to-r from-emerald-300 to-sky-400
+    text-transparent bg-clip-text;
+}
+
+.heading {
+  @apply font-serif text-3xl text-center mt-6;
+}
+
+.description {
+  @apply text-center text-gray-50/40 mt-4 italic;
+}
+
+.info {
+  @apply flex flex-col gap-20 mt-10;
+}
+
+.project {
+  @apply px-8 pt-8 bg-stone-800 rounded-3xl relative z-0 overflow-hidden
+    after:z-10 after:content-[''] after:absolute after:inset-0
+    after:outline after:outline-2 after:-outline-offset-2
+    after:rounded-3xl after:outline-gray-50/20 after:pointer-events-none;
+}
+
+.projectBackground {
+  @apply absolute inset-0 -z-10 opacity-10;
+}
+
+.projectHeading {
+  @apply font-serif text-2xl mt-2;
+}
+
+.projectDivider {
+  @apply border-t-2 border-white/5 mt-4;
+}
+
+.projectIcon {
+  @apply size-5;
+}
+
+.projectResults {
+  @apply flex flex-col gap-4 mt-4;
+}
+
+.projectResult {
+  @apply flex gap-2 text-sm text-white/50;
+}
+
+.projectCTA {
+  @apply bg-stone-50 text-stone-950
+    rounded-full font-semibold font-serif
+    inline-flex items-center justify-center gap-2
+    w-full h-[50px] mt-8
+    transition-colors duration-300 ease-in-out
+    hover:bg-stone-900 hover:text-stone-50 hover:border-2 hover:border-stone-50/20;
+}
+
+.projectCTAIcon {
+  @apply size-4;
+}
+
+.projectImage {
+  @apply mt-8 -mb-4;
+}
+
+.company-name_year {
+  @apply inline-flex gap-2
+    bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent
+    bg-clip-text font-bold uppercase tracking-widest text-sm;
+}
