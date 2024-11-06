@@ -22,7 +22,7 @@ type Props = { children: React.ReactNode };
 
 const RootLayout: React.FC<Readonly<Props>> = ({ children}) => {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={
         twMerge([
           inter.variable,
