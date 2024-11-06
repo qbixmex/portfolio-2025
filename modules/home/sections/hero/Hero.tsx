@@ -26,48 +26,107 @@ const Hero = () => {
 
         {/* STARS */}
         <HeroOrbit size={750} rotation={-72}>
-          <Graphic size={128} color="green" type="star" duration={2} delay={1} />
+          <Graphic
+            size={128}
+            color="green"
+            type="star"
+            duration={2}
+            delay={1}
+          />
         </HeroOrbit>
 
         <HeroOrbit size={550} rotation={75}>
-          <Graphic size={60} color="green" type="star" duration={3} delay={1} />
+          <Graphic
+            size={60}
+            color="green"
+            type="star"
+            duration={3}
+            delay={1}
+          />
         </HeroOrbit>
 
         <HeroOrbit size={880} rotation={150}>
-          <Graphic size={100} color="green" type="star" duration={4} delay={2} />
+          <Graphic
+            size={100}
+            color="green"
+            type="star"
+            duration={4}
+            delay={2}
+          />
         </HeroOrbit>
 
         {/* SPARKLES */}
         <HeroOrbit size={850} rotation={0}>
-          <Graphic size={75} color="gray" type="sparkle" opacity={0.2} duration={3} delay={1} />
+          <Graphic
+            size={75}
+            color="gray"
+            type="sparkle"
+            opacity={0.2}
+            duration={3}
+            delay={1}
+          />
         </HeroOrbit>
 
         <HeroOrbit size={690} rotation={100}>
-          <Graphic size={50} color="gray" type="sparkle" opacity={0.35} duration={2} />
+          <Graphic
+            size={50}
+            color="gray"
+            type="sparkle"
+            opacity={0.35}
+            duration={2}
+          />
         </HeroOrbit>
 
         <HeroOrbit size={760} rotation={190}>
-          <Graphic size={50} color="gray" type="sparkle" opacity={0.3} duration={3} delay={2} />
+          <Graphic
+            size={50}
+            color="gray"
+            type="sparkle"
+            opacity={0.3}
+            duration={3}
+            delay={2}
+          />
         </HeroOrbit>
 
         {/* CIRCLES */}
         <HeroOrbit size={670} rotation={-20}>
-          <Graphic size={30} color="gray" type="circle" opacity={0.2} duration={5} delay={1} />
+          <Graphic
+            size={30}
+            color="gray"
+            type="circle"
+            opacity={0.2}
+            duration={5}
+            delay={1}
+          />
         </HeroOrbit>
 
-        <HeroOrbit size={800} rotation={250}>
-          <Graphic size={20} color="gray" type="circle" opacity={0.2} duration={5} delay={1} />
+        <HeroOrbit size={800} rotation={120}>
+          <Graphic
+            size={20}
+            color="gray"
+            type="circle"
+            opacity={0.2}
+            duration={5}
+            delay={1}
+          />
         </HeroOrbit>
 
-        <HeroOrbit size={940} rotation={80}>
-          <Graphic size={15} color="gray" type="circle" opacity={0.25} duration={5} delay={2} />
+        <HeroOrbit size={510} rotation={140}>
+          <Graphic
+            size={20}
+            color="gray"
+            type="circle"
+            opacity={0.25}
+            duration={5}
+            delay={2}
+          />
         </HeroOrbit>
       </div>
 
       <div className="container">
-        <div className={styles.emojiButtons}>
+        <div className={styles.imageButtonsWrapper}>
           <Image
-            className={styles.memojiImage}
+            className={styles.profileImage}
             src={profileImage}
             alt="Person emoji developing a website on a computer"
             width={200}
