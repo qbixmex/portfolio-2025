@@ -1,0 +1,75 @@
+.hero {
+  @apply py-32 md:py-48 lg:py-60 relative z-0 overflow-clip;
+}
+
+.backgroundWrapper {
+  @apply absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_20%,black_70%,transparent)];
+}
+
+.background {
+  @apply absolute inset-0 -z-50 opacity-5;
+}
+
+.rings {
+  @apply absolute z-0 inset-0 border-2 border-emerald-300/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full shadow-[0_0_80px_inset] shadow-emerald-300/5;
+}
+
+.ring1 { @apply size-[600px]; }
+
+.ring2 { @apply size-[800px]; }
+
+.ring3 { @apply size-[1000px]; }
+
+.ring4 { @apply size-[1200px]; }
+
+.emojiButtons {
+  @apply flex flex-col items-center;
+}
+
+.memojiImage {
+  @apply size-[200px] object-cover object-top border rounded-full bg-emerald-300/5 border-emerald-800 shadow-[0_0_40px_2px] shadow-emerald-300/20 mb-5 backdrop-blur;
+}
+
+.status {
+  @apply bg-green-950 border border-emerald-900 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg;
+
+}
+
+.statusDot {
+  @apply bg-emerald-500 size-2.5 rounded-full animate-pulse [animation-duration:3s];
+}
+
+.statusText {
+  @apply text-lg font-medium font-serif;
+}
+
+.info {
+  @apply max-w-lg mx-auto;
+
+  & .heading {
+    @apply font-serif text-3xl font-medium md:text-5xl text-center mt-8 tracking-wide;
+  }
+  
+  & .description {
+    @apply mt-4 text-center text-white/60 italic md:text-lg;
+  }
+}
+
+.buttons {
+  @apply flex flex-col md:flex-row justify-center items-center mt-8 gap-4;
+  & .explore {
+    @apply inline-flex items-center gap-2 border border-gray-400 px-6 h-12 rounded-xl hover:bg-white/20 hover:text-white transition-colors duration-300 ease-in-out;
+    & .icon {
+      @apply size-4;
+    }
+    & span {
+      @apply font-semibold font-serif;
+    }
+  }
+  & .connect {
+    @apply inline-flex items-center gap-2 border border-emerald-500 bg-emerald-900 hover:bg-emerald-700 text-gray-50 hover:text-gray-100 px-6 h-12 rounded-xl transition-colors duration-300 ease-in-out;
+  }
+  & span {
+    @apply font-semibold font-serif;
+  }
+}

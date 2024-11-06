@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Calistoga } from "next/font/google";
+import { Inter, Orbitron } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 
@@ -8,10 +8,9 @@ const inter = Inter({
   variable: '--font-sans',
 });
 
-const calistoga = Calistoga({
+const orbitron = Orbitron({
   subsets: ['latin'],
   variable: '--font-serif',
-  weight: ['400'],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +26,7 @@ const RootLayout: React.FC<Readonly<Props>> = ({ children}) => {
       <body className={
         twMerge([
           inter.variable,
-          calistoga.variable,
+          orbitron.variable,
         ])
       }>
         {children}
