@@ -1,10 +1,11 @@
-import { Header, Hero } from "@/modules/home";
+import { Header, Hero, Projects } from "@/modules/home";
 
 const HomePage = () => {
   return (
     <main>
       <Header />
       <Hero />
+      <Projects />
     </main>
   );
 };
