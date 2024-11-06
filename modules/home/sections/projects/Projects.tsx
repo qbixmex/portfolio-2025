@@ -20,39 +20,42 @@ const Projects = () => {
             <div key={project.id} className={styles.project}>
               <div
                 className={styles.projectBackground}
-                style={{
-                  background: `url(${GrainImage.src})`
-                }}
+                style={{ background: `url(${GrainImage.src})` }}
               ></div>
-              <div className={styles["company-name_year"]}>
-                <span>{project.company}</span>
-                <span>&bull;</span>
-                <span>{project.year}</span>
+              <div className={styles.content}>
+                <div className={styles.contentFirstColumn}>
+                  <div className={styles["company-name_year"]}>
+                    <span>{project.company}</span>
+                    <span>&bull;</span>
+                    <span>{project.year}</span>
+                  </div>
+                  <h3 className={styles.projectHeading}>{project.title}</h3>
+                  <hr className={styles.projectDivider} />
+                  <ul className={styles.projectResults}>
+                    {project.results.map((result) => (
+                      <li key={result.title} className={styles.projectResult}>
+                        <CheckCircleIcon className={styles.projectIcon} />
+                        {result.title}
+                      </li>
+                    ))}
+                  </ul>
+                  <a href={project.url} className={styles.projectCTA}>
+                    <span>Visit Live Site</span>
+                    <ArrowUpRightIcon className={styles.projectCTAIcon} />
+                  </a>
+                </div>
+                <div className={styles.contentFirstColumn}>
+                  <Image
+                    className={styles.projectImage}
+                    src={project.image}
+                    alt={project.title}
+                    width={800}
+                    height={500}
+                  />
+                </div>
               </div>
-              <h3 className={styles.projectHeading}>{project.title}</h3>
-              <hr className={styles.projectDivider} />
-              <ul className={styles.projectResults}>
-                {project.results.map((result) => (
-                  <li key={result.title} className={styles.projectResult}>
-                    <CheckCircleIcon className={styles.projectIcon} />
-                    {result.title}
-                  </li>
-                ))}
-              </ul>
-              <a href={project.url} className={styles.projectCTA}>
-                <span>Visit Live Site</span>
-                <ArrowUpRightIcon className={styles.projectCTAIcon} />
-              </a>
-              <Image
-                className={styles.projectImage}
-                src={project.image}
-                alt={project.title}
-                width={800}
-                height={500}
-              />
             </div>
-          ))
-          }  
+          ))}
         </div>
       </div>
     </section>
