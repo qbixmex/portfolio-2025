@@ -1,4 +1,4 @@
-import { Header, Hero, Projects } from "@/modules/home";
+import { Header, Hero, Projects, Tape } from "@/modules/home";
 
 const HomePage = () => {
   return (
@@ -6,6 +6,7 @@ const HomePage = () => {
       <Header />
       <Hero />
       <Projects />
+      <Tape />
     </main>
   );
 };
