@@ -1,5 +1,5 @@
 import Image from "next/image";
-import memojiImage from "@/assets/images/memoji-computer.png";
+// import profileImage from "@/assets/images/daniel-80s-videogame.png";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import "./Hero.css";
 
@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="emoji-buttons">
           <Image
             className="memoji-image"
-            src={memojiImage}
+            src={profileImage}
             alt="Person emoji developing a website on a computer"
             width={200}
             height={200}

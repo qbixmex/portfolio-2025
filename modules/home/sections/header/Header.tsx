@@ -1,34 +1,35 @@
-import "./Header.css";
+import { twMerge } from "tailwind-merge";
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <section id="nav-container">
-      <nav id="nav">
+    <section className={styles.navContainer}>
+      <nav className={styles.nav}>
         <a
           href="#home"
           title="Go to Home"
-          className="nav-item"
+          className={styles.navItem}
         >
           Home
         </a>
         <a
           href="#projects"
           title="Go to Projects"
-          className="nav-item"
+          className={styles.navItem}
         >
           Projects
         </a>
         <a
           href="#about"
           title="Go to About"
-          className="nav-item"
+          className={styles.navItem}
         >
           About
         </a>
         <a
           href="#contact"
           title="Go to Contact"
-          className="nav-item nav-item--selected"
+          className={twMerge([styles.navItem, styles.navItemSelected])}
         >
           Contact
         </a>
