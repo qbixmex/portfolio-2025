@@ -1,4 +1,6 @@
-import { Header, Hero, Projects, Tape, Testimonials } from "@/modules/home";
+import {
+  About, Header, Hero, Projects, Tape, Testimonials,
+} from "@/modules/home";
 
 const HomePage = () => {
   return (
@@ -8,6 +10,7 @@ const HomePage = () => {
       <Projects />
       <Tape />
       <Testimonials />
+      <About />
     </main>
   );
 };
