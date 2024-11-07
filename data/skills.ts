@@ -7,13 +7,13 @@ import javascript from '@/assets/icons/javascript.svg';
 import nextJs from '@/assets/icons/next-js.svg';
 import typescript from '@/assets/icons/typescript.svg';
 
-type Technology = {
+export type Skill = {
   id: string;
   title: string;
   iconType: ComponentType;
 };
 
-const technologies: Technology[] = [
+const skills: Skill[] = [
   {
     id: 'fda479a1-b735-451c-a2c0-ba33b1bc63c8',
     title: 'React',
@@ -51,4 +51,4 @@ const technologies: Technology[] = [
   },
 ];
 
-export default technologies;
+export default skills;

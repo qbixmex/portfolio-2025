@@ -1,0 +1,15 @@
+#about {
+  @apply my-20;
+}
+
+.cardClasses {
+  @apply h-[320px];
+}
+
+.readingContainer {
+  @apply mt-20 flex flex-col gap-8;
+}
+
+.readingImageWrapper {
+  @apply w-40 mx-auto mt-8;
+}

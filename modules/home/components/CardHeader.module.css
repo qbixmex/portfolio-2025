@@ -1,0 +1,19 @@
+.wrapper {
+  @apply flex flex-col gap-2;
+}
+
+.icon_title {
+  @apply inline-flex items-center gap-2;
+}
+
+.icon {
+  @apply size-9 text-emerald-300;
+}
+
+.title {
+  @apply font-serif text-3xl;
+}
+
+.description {
+  @apply text-sm text-white/60;
+}
