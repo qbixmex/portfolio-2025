@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import portfolioProjects from '@/data/projects';
 import SectionHeader from '@/modules/home/components/SectionHeader';
+import Card from "@/modules/home/components/Card";
 
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -22,11 +23,7 @@ const Projects = () => {
 
         <div className={styles.info}>
           {portfolioProjects.map((project) => (
-            <div key={project.id} className={styles.project}>
-              <div
-                className={styles.projectBackground}
-                style={{ background: `url(${GrainImage.src})` }}
-              ></div>
+            <Card key={project.id} className={styles.cardPadding}>
               <div className={styles.content}>
                 <div className={styles.contentFirstColumn}>
                   <div className={styles["company-name_year"]}>
@@ -59,7 +56,7 @@ const Projects = () => {
                   />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>

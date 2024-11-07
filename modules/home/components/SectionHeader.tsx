@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from 'react';
 import styles from './SectionHeader.module.css';
 
 type SubProps = {
-  children: string;
+  children: string | JSX.Element;
 };
 
 type HeaderProps = {
