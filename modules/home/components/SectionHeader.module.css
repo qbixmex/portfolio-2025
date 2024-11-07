@@ -1,0 +1,20 @@
+.eyeBrowWrapper {
+  @apply flex justify-center;
+}
+
+.eyeBrow {
+  @apply uppercase font-semibold tracking-widest
+    bg-gradient-to-r from-emerald-300 to-sky-400
+    text-transparent bg-clip-text;
+}
+
+.title {
+  @apply font-serif text-3xl text-center mt-6
+    md:text-5xl;
+}
+
+.description {
+  @apply text-center text-gray-50/40 mt-4 italic
+    max-w-md mx-auto
+    md:text-lg lg:text-xl;
+}
