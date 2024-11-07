@@ -3,7 +3,9 @@
 }
 
 .backgroundWrapper {
-  @apply absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_20%,black_70%,transparent)];
+  @apply absolute inset-0
+    [mask-image:linear-gradient(to_bottom,transparent,black_20%,black_70%,transparent)]
+    -z-10;
 }
 
 .background {
@@ -11,7 +13,9 @@
 }
 
 .rings {
-  @apply absolute z-0 inset-0 border-2 border-emerald-300/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full shadow-[0_0_80px_inset] shadow-emerald-300/5;
+  @apply absolute z-0 inset-0 border-2 border-emerald-300/5
+    top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+    rounded-full shadow-[0_0_80px_inset] shadow-emerald-300/5;
 }
 
 .ring1 { @apply size-[600px]; }

@@ -57,6 +57,6 @@ const portfolioProjects: Project[] = [
       { title: "Increased traffic by 35%" },
     ],
   },
-];
+] as const;
 
 export default portfolioProjects;

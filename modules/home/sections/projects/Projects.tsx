@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import portfolioProjects from '@/data/projects';
+import SectionHeader from '@/modules/home/components/SectionHeader';
+import Card from "@/modules/home/components/Card";
+
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import GrainImage from "@/assets/images/grain.jpg";
@@ -10,18 +13,17 @@ const Projects = () => {
   return (
     <section id={styles["projects"]}>
       <div className="container">
-        <div className={styles.subHeadingWrapper}>
-          <p className={styles.subHeading}>Performance improvements</p>
-        </div>
-        <h2 className={styles.heading}>Latest Projects</h2>
-        <p className={styles.description}>See how I transformed concepts into engaging digital experiences.</p>
+        <SectionHeader>
+          <SectionHeader.EyeBrow>Performance improvements</SectionHeader.EyeBrow>
+          <SectionHeader.Title>Latest Projects</SectionHeader.Title>
+          <SectionHeader.Description>
+            See how I transformed concepts into engaging digital experiences.
+          </SectionHeader.Description>
+        </SectionHeader>
+
         <div className={styles.info}>
           {portfolioProjects.map((project) => (
-            <div key={project.id} className={styles.project}>
-              <div
-                className={styles.projectBackground}
-                style={{ background: `url(${GrainImage.src})` }}
-              ></div>
+            <Card key={project.id} className={styles.cardPadding}>
               <div className={styles.content}>
                 <div className={styles.contentFirstColumn}>
                   <div className={styles["company-name_year"]}>
@@ -54,7 +56,7 @@ const Projects = () => {
                   />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
