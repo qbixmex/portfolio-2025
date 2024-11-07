@@ -2,27 +2,6 @@
   @apply pb-16 md:py-24;
 }
 
-.subHeadingWrapper {
-  @apply flex justify-center;
-}
-
-.subHeading {
-  @apply uppercase font-semibold tracking-widest
-    bg-gradient-to-r from-emerald-300 to-sky-400
-    text-transparent bg-clip-text;
-}
-
-.heading {
-  @apply font-serif text-3xl text-center mt-6
-    md:text-5xl;
-}
-
-.description {
-  @apply text-center text-gray-50/40 mt-4 italic
-    max-w-md mx-auto
-    md:text-lg lg:text-xl;
-}
-
 .info {
   @apply flex flex-col gap-20 mt-10 md:mt-20;
 }
@@ -31,16 +10,8 @@
   @apply lg:grid lg:grid-cols-2 lg:gap-16 lg:pt-16 lg:px-20;
 }
 
-.project {
-  @apply px-8 pt-8 bg-stone-800 rounded-3xl relative z-0 overflow-hidden
-    after:z-10 after:content-[''] after:absolute after:inset-0
-    after:outline after:outline-2 after:-outline-offset-2
-    after:rounded-3xl after:outline-gray-50/20 after:pointer-events-none
-    md:pt-12 md:px-10;
-}
-
-.projectBackground {
-  @apply absolute inset-0 -z-10 opacity-10;
+.cardPadding {
+  @apply px-8 pt-8 pb-0 md:pt-12 md:px-10;
 }
 
 .projectHeading {
