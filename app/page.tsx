@@ -6,10 +6,10 @@ const HomePage = () => {
   return (
     <main>
       <Header />
-      <Hero />
+      {/* <Hero />
       <Projects />
       <Tape />
-      <Testimonials />
+      <Testimonials /> */}
       <About />
     </main>
   );

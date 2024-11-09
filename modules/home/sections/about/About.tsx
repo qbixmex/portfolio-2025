@@ -3,12 +3,14 @@ import SectionHeader from "@/modules/home/components/SectionHeader";
 import Card from "@/modules/home/components/Card";
 import BookImage from "@/assets/images/book-cover.png"
 import MapImage from "@/assets/images/map.png"
-import profileImage from "@/assets/images/daniel-80s-video-game-200-250.png";
+import Icon from '@/modules/home/components/Icon';
+import LocationDotIcon from "@/assets/icons/location-dot.svg"
 import hobbies from "@/data/hobbies";
 import styles from "./About.module.css";
 import CardHeader from "@/modules/home/components/CardHeader";
 import ToolboxItems from "@/modules/home/components//ToolboxItems";
 import skills from '@/data/skills';
+import { twMerge } from "tailwind-merge";
 
 const About = () => {
   return (
@@ -38,41 +40,67 @@ const About = () => {
             </div>
           </Card>
 
-          <Card className={styles.cardClasses} style={{ padding: 0 }}>
-            <CardHeader style={{ padding: "24px 24px 0px" }}>
+          <Card className={twMerge(styles.cardClasses, styles.skillsCard)}>
+            <CardHeader className={styles.skillsCardHeader}>
               <CardHeader.Title>My Toolbox</CardHeader.Title>
               <CardHeader.Description>
                 Explore the languages, libraries and frameworks I use to create these amazing technologies.
               </CardHeader.Description>
             </CardHeader>
-            <ToolboxItems items={skills} className="mt-6" />
+            <ToolboxItems
+              items={skills}
+              className="mt-6"
+              fromColor="rgb(110, 231, 183)"
+              toColor="rgb(56, 189, 248)"
+            />
             <ToolboxItems
               items={skills} 
               className="mt-6"
               itemsWrapperClassName="-translate-x-1/2"
+              fromColor="rgb(110, 231, 183)"
+              toColor="rgb(56, 189, 248)"
             />
           </Card>
 
-          <Card className={styles.cardClasses}>
-            <CardHeader>
+          <Card className={twMerge(styles.cardClasses, styles.hobbiesCard)}>
+            <CardHeader className={styles.hobbiesCardHeader}>
               <CardHeader.Title>Beyond the code</CardHeader.Title>
               <CardHeader.Description>
                 Explore my interests and hobbies.
               </CardHeader.Description>
             </CardHeader>
-            <div>
-              {hobbies.map(({ id, title, emoji })=> (
-                <div key={id}>
-                  <span>{emoji}</span>
-                  <span>{title}</span>
+            <div className={styles.hobbies}>
+              {hobbies.map((hobby)=> (
+                <div
+                  key={hobby.id}
+                  className={styles.hobby}
+                  style={{
+                    top: hobby.top,
+                    left: hobby.left,
+                    zIndex: hobby.z,
+                  }}
+                >
+                  <span className={styles.hobbyEmoji}>
+                    {hobby.emoji}
+                  </span>
+                  <span className={styles.hobbyTitle}>
+                    {hobby.title}
+                  </span>
                 </div>
               ))}
             </div>
           </Card>
 
-          <Card className={styles.cardClasses}>
-            <Image src={MapImage} alt="Map" />
-            <Image src={profileImage} alt="Profile Image" />
+          <Card className={twMerge(styles.cardClasses, styles.mapCard)}>
+            <Image src={MapImage} alt="Map" className={styles.mapImage} />
+            <div className={styles.mapIconContainer}>
+              <Icon
+                component={LocationDotIcon}
+                className={styles.mapIcon}
+                fromColor="hsl(155, 100%, 95%)"
+                toColor="hsla(155, 100%, 95%, 0.4)"
+              />
+            </div>
           </Card>
         </div>
       </div>

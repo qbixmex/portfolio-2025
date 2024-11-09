@@ -13,3 +13,56 @@
 .readingImageWrapper {
   @apply w-40 mx-auto mt-8;
 }
+
+.skillsCard {
+  @apply p-0;
+}
+
+.skillsCardHeader {
+  @apply px-6 pt-6;
+}
+
+.hobbiesCard {
+  @apply flex flex-col p-0;
+}
+
+.hobbiesCardHeader {
+  @apply p-6;
+}
+
+.hobbies {
+  @apply relative flex-1;
+}
+
+.hobby {
+  @apply absolute inline-flex gap-2 items-center px-6 py-1.5
+    bg-gradient-to-r from-emerald-400 to-sky-400
+    rounded-full;
+}
+
+.hobbyTitle {
+  @apply font-medium text-stone-900;
+}
+
+.hobbyEmoji {
+  @apply text-3xl;
+}
+
+.mapCard {
+  @apply p-0 relative;
+}
+
+.mapImage {
+  @apply w-full h-full object-cover object-left-top;
+}
+
+.mapIconContainer {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+    bg-gradient-to-r from-emerald-300 to-sky-400
+    rounded-full
+    after:content-[''] after:absolute after:box-border after:inset-0 after:rounded-full after:border-2 after:border-white/40;
+}
+
+.mapIcon {
+  @apply size-[50px] rotate-[20deg] p-5 box-content;
+}
