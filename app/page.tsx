@@ -1,5 +1,5 @@
 import {
-  About, Header, Hero, Projects, Tape, Testimonials,
+  About, Contact, Header, Hero, Projects, Tape, Testimonials,
 } from "@/modules/home";
 
 const HomePage = () => {
@@ -11,6 +11,7 @@ const HomePage = () => {
       <Tape />
       <Testimonials />
       <About />
+      <Contact />
     </main>
   );
 };
