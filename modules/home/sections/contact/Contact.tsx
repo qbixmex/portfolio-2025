@@ -25,7 +25,7 @@ const Contact = () => {
                 I can help you achieve our goals.
               </p>
             </div>
-            <div className="">
+            <div>
               <button
                 type="button"
                 className={styles.cardButton}
