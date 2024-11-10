@@ -23,8 +23,10 @@ const About = () => {
             Learn more about who I am, what I do, and what inspires me.
           </SectionHeader.Description>
         </SectionHeader>
-        <div className={styles.readingContainer}>
-          <Card className={styles.cardClasses}>
+
+        <div className={styles.cardsReadingAndToolbox}>
+          {/* READING */}
+          <Card className={twMerge(styles.cardClasses, styles.readingCard)}>
             <CardHeader>
               <CardHeader.Title>My Reads</CardHeader.Title>
               <CardHeader.Description>
@@ -32,14 +34,11 @@ const About = () => {
               </CardHeader.Description>
             </CardHeader>
             <div className={styles.readingImageWrapper}>
-              <Image
-                src={BookImage}
-                alt="Book Cover"
-                className={styles.image}
-              />
+              <Image src={BookImage} alt="Book Cover" />
             </div>
           </Card>
 
+          {/* TOOLBOX */}
           <Card className={twMerge(styles.cardClasses, styles.skillsCard)}>
             <CardHeader className={styles.skillsCardHeader}>
               <CardHeader.Title>My Toolbox</CardHeader.Title>
@@ -49,19 +48,21 @@ const About = () => {
             </CardHeader>
             <ToolboxItems
               items={skills}
-              className="mt-6"
               fromColor="rgb(110, 231, 183)"
               toColor="rgb(56, 189, 248)"
             />
             <ToolboxItems
-              items={skills} 
+              items={skills}
               className="mt-6"
               itemsWrapperClassName="-translate-x-1/2"
               fromColor="rgb(110, 231, 183)"
               toColor="rgb(56, 189, 248)"
             />
           </Card>
+        </div>
 
+        <div className={styles.cardsHobbiesAndMap}>
+          {/* HOBBIES */}
           <Card className={twMerge(styles.cardClasses, styles.hobbiesCard)}>
             <CardHeader className={styles.hobbiesCardHeader}>
               <CardHeader.Title>Beyond the code</CardHeader.Title>
@@ -91,6 +92,7 @@ const About = () => {
             </div>
           </Card>
 
+          {/* MAP */}
           <Card className={twMerge(styles.cardClasses, styles.mapCard)}>
             <Image src={MapImage} alt="Map" className={styles.mapImage} />
             <div className={styles.mapIconContainer}>
