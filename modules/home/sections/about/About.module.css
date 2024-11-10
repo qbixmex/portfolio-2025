@@ -1,0 +1,76 @@
+#about {
+  @apply my-20 lg:my-28;
+}
+
+.cardClasses {
+  @apply h-[320px];
+}
+
+.cardsReadingAndToolbox {
+  @apply mt-20 grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3;
+}
+
+.readingCard {
+  @apply flex flex-col gap-8 md:col-span-2 lg:col-span-1;
+}
+
+.readingImageWrapper {
+  @apply w-40 mx-auto mt-2 md:mt-0;
+}
+
+.cardsHobbiesAndMap {
+  @apply grid grid-cols-1 md:grid-cols-5 gap-8 mt-8 lg:grid-cols-3;
+}
+
+.skillsCard {
+  @apply md:col-span-3 lg:col-span-2;
+}
+
+.skillsCardHeader {
+  @apply bg-transparent;
+}
+
+.hobbiesCard {
+  @apply flex flex-col p-0 md:col-span-3 lg:col-span-2;
+}
+
+.hobbiesCardHeader {
+  @apply p-6;
+}
+
+.hobbies {
+  @apply relative flex-1;
+}
+
+.hobby {
+  @apply absolute inline-flex gap-2 items-center px-6 py-1.5
+    bg-gradient-to-r from-emerald-400 to-sky-400
+    rounded-full;
+}
+
+.hobbyTitle {
+  @apply font-medium text-stone-900;
+}
+
+.hobbyEmoji {
+  @apply text-2xl;
+}
+
+.mapCard {
+  @apply p-0 relative md:col-span-2 lg:col-span-1;
+}
+
+.mapImage {
+  @apply w-full h-full object-cover object-left-top;
+}
+
+.mapIconContainer {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+    bg-gradient-to-r from-emerald-300 to-sky-400
+    rounded-full
+    after:content-[''] after:absolute after:box-border after:inset-0 after:rounded-full after:border-2 after:border-white/40;
+}
+
+.mapIcon {
+  @apply size-[50px] rotate-[20deg] p-5 box-content;
+}
