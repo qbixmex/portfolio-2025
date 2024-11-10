@@ -16,7 +16,7 @@
 }
 
 .cardClasses {
-  @apply max-w-xs md:max-w-md md:p-8;
+  @apply max-w-xs md:max-w-md p-6 md:p-8;
 }
 
 .imageWrapper {
