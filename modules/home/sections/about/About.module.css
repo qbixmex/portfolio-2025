@@ -18,6 +18,14 @@
   @apply w-40 mx-auto mt-2 md:mt-0;
 }
 
+.scrollLeft {
+  @apply animate-move-left [animation-duration:60s];
+}
+
+.scrollRight {
+  @apply animate-move-right [animation-duration:30s];
+}
+
 .cardsHobbiesAndMap {
   @apply grid grid-cols-1 md:grid-cols-5 gap-8 mt-8 lg:grid-cols-3;
 }
@@ -65,12 +73,24 @@
 }
 
 .mapIconContainer {
-  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-    bg-gradient-to-r from-emerald-300 to-sky-400
-    rounded-full
-    after:content-[''] after:absolute after:box-border after:inset-0 after:rounded-full after:border-2 after:border-white/40;
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-16
+    rounded-full after:absolute after:content-[''] after:inset-0
+    after:rounded-full grid place-content-center;
+}
+
+.mapIconBackground,
+.mapIconAnimation {
+  @apply absolute inset-0 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full;
+}
+
+.mapIconBackground {
+  @apply -z-20;
+}
+
+.mapIconAnimation {
+  @apply -z-10 animate-ping [animation-duration:2s];
 }
 
 .mapIcon {
-  @apply size-[50px] rotate-[20deg] p-5 box-content;
+  @apply !size-8 rotate-[25deg];
 }

@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { type Skill } from '@/data/skills';
 import Icon from '@/modules/home/components/Icon';
 import styles from './ToolboxItems.module.css';
@@ -21,15 +22,22 @@ const ToolboxItems: React.FC<Readonly<Props>> = ({
   return (
     <div className={twMerge(styles.wrapper, className)}>
       <div className={twMerge(styles.tools, itemsWrapperClassName)}>
-        {items.map(({ id, title, iconType }) => (
-          <div key={id} className={styles["tech-icon_title"]}>
-            <Icon
-              component={iconType}
-              fromColor={fromColor}
-              toColor={toColor}
-            />
-            <span className={styles.techTitle}>{title}</span>
-          </div>
+        {new Array(2).fill(0).map((_, index) => (
+          <Fragment key={index}>
+            {items.map(({ id, title, iconType }) => (
+              <div
+                key={id}
+                className={styles["tech-icon_title"]}
+              >
+                <Icon
+                  component={iconType}
+                  fromColor={fromColor}
+                  toColor={toColor}
+                />
+                <span className={styles.techTitle}>{title}</span>
+              </div>
+            ))}
+          </Fragment>
         ))}
       </div>
     </div>
