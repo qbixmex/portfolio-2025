@@ -1,0 +1,19 @@
+.starIconContainer {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.starIconWrapper {
+  @apply animate-spin;
+}
+
+.starIconFrame {
+  @apply block;
+}
+
+.starIconSpin {
+  @apply w-max animate-spin;
+}
+
+.starIcon {
+  @apply inline-flex;
+}
