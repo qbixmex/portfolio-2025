@@ -5,7 +5,6 @@ import Card from "@/modules/home/components/Card";
 
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import GrainImage from "@/assets/images/grain.jpg";
 
 import styles from './Projects.module.css';
 
@@ -22,8 +21,12 @@ const Projects = () => {
         </SectionHeader>
 
         <div className={styles.info}>
-          {portfolioProjects.map((project) => (
-            <Card key={project.id} className={styles.cardPadding}>
+          {portfolioProjects.map((project, projectIndex) => (
+            <Card
+              key={project.id}
+              className={styles.cardPadding}
+              style={{ top: `calc(100px + ${projectIndex * 20}px)` }}
+            >
               <div className={styles.content}>
                 <div className={styles.contentFirstColumn}>
                   <div className={styles["company-name_year"]}>
