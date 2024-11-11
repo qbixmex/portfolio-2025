@@ -6,7 +6,7 @@ import styles from "./Contact.module.css";
 
 const Contact = () => {
   return (
-    <div id={styles["contact"]}>
+    <div id="contact" className="contact">
       <div className="container">
         <div className={styles.card}>
           <div
