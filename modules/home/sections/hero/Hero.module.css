@@ -40,7 +40,11 @@
 }
 
 .statusDot {
-  @apply bg-emerald-500 size-2.5 rounded-full animate-pulse [animation-duration:3s];
+  @apply bg-emerald-500 size-2.5 rounded-full relative;
+}
+
+.statusDotAnimation {
+  @apply bg-emerald-400 absolute inset-0 rounded-full animate-ping-large;
 }
 
 .statusText {
