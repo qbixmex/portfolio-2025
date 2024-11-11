@@ -27,14 +27,14 @@ const Hero = () => {
         {/* STARS */}
         <Orbit
           size={750}
-          rotation={-72}
+          rotation={180}
           shouldOrbit={true}
-          orbitDuration="30s"
+          orbitDuration="25s"
           shouldSpin={true}
           spinDuration="30s"
         >
           <Graphic
-            size={128}
+            size={80}
             color="green"
             type="star"
             duration={2}
@@ -44,7 +44,7 @@ const Hero = () => {
 
         <Orbit
           size={550}
-          rotation={75}
+          rotation={130}
           shouldOrbit={true}
           orbitDuration="25s"
           shouldSpin={true}
@@ -61,7 +61,7 @@ const Hero = () => {
 
         <Orbit
           size={880}
-          rotation={150}
+          rotation={50}
           shouldOrbit={true}
           orbitDuration="60s"
           shouldSpin={true}
@@ -87,7 +87,7 @@ const Hero = () => {
         >
           <Graphic
             size={75}
-            color="yellow"
+            color="gray"
             type="sparkle"
             opacity={0.2}
             duration={3}
@@ -97,7 +97,7 @@ const Hero = () => {
 
         <Orbit
           size={690}
-          rotation={100}
+          rotation={250}
           shouldOrbit={true}
           orbitDuration="30s"
           shouldSpin={true}
@@ -105,7 +105,7 @@ const Hero = () => {
         >
           <Graphic
             size={50}
-            color="yellow"
+            color="gray"
             type="sparkle"
             opacity={0.35}
             duration={2}
@@ -116,13 +116,13 @@ const Hero = () => {
           size={760}
           rotation={190}
           shouldOrbit={true}
-          orbitDuration="50s"
+          orbitDuration="45s"
           shouldSpin={true}
           spinDuration="30s"
         >
           <Graphic
             size={50}
-            color="yellow"
+            color="gray"
             type="sparkle"
             opacity={0.3}
             duration={3}
@@ -139,7 +139,7 @@ const Hero = () => {
         >
           <Graphic
             size={30}
-            color="blue"
+            color="gray"
             type="circle"
             opacity={0.2}
             duration={5}
@@ -155,7 +155,7 @@ const Hero = () => {
         >
           <Graphic
             size={20}
-            color="pink"
+            color="gray"
             type="circle"
             opacity={0.2}
             duration={5}
@@ -171,7 +171,7 @@ const Hero = () => {
         >
           <Graphic
             size={20}
-            color="yellow"
+            color="gray"
             type="circle"
             opacity={0.25}
             duration={5}
