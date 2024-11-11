@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-import HeroOrbit from "./components/HeroOrbit";
+import Orbit from "./components/Orbit";
 import Graphic from "./components/Graphic";
 
 import styles from "./Hero.module.css";
@@ -25,17 +25,31 @@ const Hero = () => {
         <div className={twMerge([styles.rings, styles.ring4])}></div>
 
         {/* STARS */}
-        <HeroOrbit size={750} rotation={-72}>
+        <Orbit
+          size={750}
+          rotation={180}
+          shouldOrbit={true}
+          orbitDuration="25s"
+          shouldSpin={true}
+          spinDuration="30s"
+        >
           <Graphic
-            size={128}
+            size={80}
             color="green"
             type="star"
             duration={2}
             delay={1}
           />
-        </HeroOrbit>
+        </Orbit>
 
-        <HeroOrbit size={550} rotation={75}>
+        <Orbit
+          size={550}
+          rotation={130}
+          shouldOrbit={true}
+          orbitDuration="25s"
+          shouldSpin={true}
+          spinDuration="60s"
+        >
           <Graphic
             size={60}
             color="green"
@@ -43,9 +57,16 @@ const Hero = () => {
             duration={3}
             delay={1}
           />
-        </HeroOrbit>
+        </Orbit>
 
-        <HeroOrbit size={880} rotation={150}>
+        <Orbit
+          size={880}
+          rotation={50}
+          shouldOrbit={true}
+          orbitDuration="60s"
+          shouldSpin={true}
+          spinDuration="45s"
+        >
           <Graphic
             size={100}
             color="green"
@@ -53,10 +74,17 @@ const Hero = () => {
             duration={4}
             delay={2}
           />
-        </HeroOrbit>
+        </Orbit>
 
         {/* SPARKLES */}
-        <HeroOrbit size={850} rotation={0}>
+        <Orbit
+          size={850}
+          rotation={0}
+          shouldOrbit={true}
+          shouldSpin={true}
+          orbitDuration="60s"
+          spinDuration="30s"
+        >
           <Graphic
             size={75}
             color="gray"
@@ -65,9 +93,16 @@ const Hero = () => {
             duration={3}
             delay={1}
           />
-        </HeroOrbit>
+        </Orbit>
 
-        <HeroOrbit size={690} rotation={100}>
+        <Orbit
+          size={690}
+          rotation={250}
+          shouldOrbit={true}
+          orbitDuration="30s"
+          shouldSpin={true}
+          spinDuration="25s"
+        >
           <Graphic
             size={50}
             color="gray"
@@ -75,9 +110,16 @@ const Hero = () => {
             opacity={0.35}
             duration={2}
           />
-        </HeroOrbit>
+        </Orbit>
 
-        <HeroOrbit size={760} rotation={190}>
+        <Orbit
+          size={760}
+          rotation={190}
+          shouldOrbit={true}
+          orbitDuration="45s"
+          shouldSpin={true}
+          spinDuration="30s"
+        >
           <Graphic
             size={50}
             color="gray"
@@ -86,10 +128,15 @@ const Hero = () => {
             duration={3}
             delay={2}
           />
-        </HeroOrbit>
+        </Orbit>
 
         {/* CIRCLES */}
-        <HeroOrbit size={670} rotation={-20}>
+        <Orbit
+          size={670}
+          rotation={-20}
+          shouldOrbit={true}
+          orbitDuration="30s"
+        >
           <Graphic
             size={30}
             color="gray"
@@ -98,9 +145,14 @@ const Hero = () => {
             duration={5}
             delay={1}
           />
-        </HeroOrbit>
+        </Orbit>
 
-        <HeroOrbit size={800} rotation={120}>
+        <Orbit
+          size={800}
+          rotation={120}
+          shouldOrbit={true}
+          orbitDuration="30s"
+        >
           <Graphic
             size={20}
             color="gray"
@@ -109,9 +161,14 @@ const Hero = () => {
             duration={5}
             delay={1}
           />
-        </HeroOrbit>
+        </Orbit>
 
-        <HeroOrbit size={510} rotation={140}>
+        <Orbit
+          size={510}
+          rotation={140}
+          shouldOrbit={true}
+          orbitDuration="30s"
+        >
           <Graphic
             size={20}
             color="gray"
@@ -120,7 +177,7 @@ const Hero = () => {
             duration={5}
             delay={2}
           />
-        </HeroOrbit>
+        </Orbit>
       </div>
 
       <div className="container">
@@ -134,7 +191,9 @@ const Hero = () => {
           />
 
           <div className={styles.status}>
-            <div className={styles.statusDot}></div>
+            <div className={styles.statusDot}>
+              <div className={styles.statusDotAnimation}></div>
+            </div>
             <p className={styles.statusText}>Available for new projects</p>
           </div>
 
