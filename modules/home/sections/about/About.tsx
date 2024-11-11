@@ -8,7 +8,8 @@ import styles from "./About.module.css";
 
 const About = () => {
   return (
-    <section id={styles["about"]}>
+    <section className={styles.about}>
+      <div id="about" className={styles.aboutAnchor}></div>
       <div className="container">
         <SectionHeader>
           <SectionHeader.EyeBrow>About Me</SectionHeader.EyeBrow>
