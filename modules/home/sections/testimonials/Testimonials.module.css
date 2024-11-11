@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-  @apply mt-12 py-4 lg:mt-20 flex overflow-x-clip
+  @apply mt-12 py-4 pr-8 lg:mt-20 flex overflow-x-clip
     [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)];
 }
 
