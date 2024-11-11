@@ -1,5 +1,9 @@
-#about {
-  @apply my-20 lg:my-28;
+.about {
+  @apply my-20 lg:my-28 relative;
+}
+
+.aboutAnchor {
+  @apply absolute -top-20;
 }
 
 .cardClasses {
