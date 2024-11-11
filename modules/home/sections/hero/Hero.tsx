@@ -10,7 +10,7 @@ import GrainImage from "@/assets/images/grain.jpg";
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section id="home" className={styles.hero}>
       <div className={styles.backgroundWrapper}>
         {/* GRAIN */}
         <div

@@ -10,7 +10,7 @@ import styles from './Projects.module.css';
 
 const Projects = () => {
   return (
-    <section id={styles["projects"]}>
+    <section id="projects" className={styles.projects}>
       <div className="container">
         <SectionHeader>
           <SectionHeader.EyeBrow>Performance improvements</SectionHeader.EyeBrow>
