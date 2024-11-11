@@ -1,9 +1,5 @@
-import Image from "next/image";
-
-import testimonials from "@/data/testimonials";
 import SectionHeader from '@/modules/home/components/SectionHeader';
-
-import Card from "@/modules/home/components/Card";
+import TestimonialsList from './TestimonialsList';
 import styles from "./Testimonials.module.css";
 
 const Testimonials = () => {
@@ -22,26 +18,7 @@ const Testimonials = () => {
         </SectionHeader>
         <div className={styles.wrapper}>
           <div className={styles.testimonialsContainer}>
-            {testimonials.map((testimonial) => (
-              <Card key={testimonial.id} className={styles.cardClasses}>
-                <div className={styles.testimonialHeader}>
-                  <figure className={styles.imageWrapper}>
-                    <Image
-                      src={testimonial.avatar.src}
-                      alt={testimonial.name}
-                      className={styles.image}
-                      width={100}
-                      height={100}
-                    />
-                  </figure>
-                  <div>
-                    <div className={styles.name}>{testimonial.name}</div>
-                    <div className={styles.position}>{testimonial.position}</div>
-                  </div>
-                </div>
-                <p className={styles.text}>{testimonial.text}</p>
-              </Card>
-            ))}
+            {new Array(2).fill(0).map(() => (<TestimonialsList />))}
           </div>
         </div>
       </div>
