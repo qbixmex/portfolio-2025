@@ -6,7 +6,7 @@ import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 
-interface Testimonial {
+export interface Testimonial {
   id: string;
   name: string;
   position: string;
