@@ -73,18 +73,18 @@
 }
 
 .mapImage {
-  @apply w-full h-full object-cover object-left-top;
+  @apply w-full h-full object-cover object-center;
 }
 
 .mapIconContainer {
-  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-16
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-12
     rounded-full after:absolute after:content-[''] after:inset-0
     after:rounded-full grid place-content-center;
 }
 
 .mapIconBackground,
 .mapIconAnimation {
-  @apply absolute inset-0 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full;
+  @apply absolute inset-0 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full opacity-50;
 }
 
 .mapIconBackground {
@@ -96,5 +96,5 @@
 }
 
 .mapIcon {
-  @apply !size-8 rotate-[25deg];
+  @apply !size-7 rotate-[25deg];
 }
