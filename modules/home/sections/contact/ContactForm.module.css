@@ -1,5 +1,9 @@
+.formField {
+  @apply mb-5;
+}
+
 .formGroup {
-  @apply flex flex-col items-start md:items-center md:flex-row gap-5 mb-5;
+  @apply w-full flex flex-col items-start md:items-center md:flex-row gap-5;
 }
 
 .formLabel {
@@ -23,6 +27,15 @@
 
 .formTextArea {
   @apply p-4 resize-none;
+}
+
+.formFieldError {
+  @apply text-red-700 !border-red-700 text-sm font-semibold italic !bg-red-100;
+}
+
+.formErrorMessage {
+  @apply ml-2 mt-3 text-red-500 text-sm font-semibold italic before:content-['*']
+  before:mr-2;
 }
 
 .sendGroup {
