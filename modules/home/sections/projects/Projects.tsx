@@ -5,13 +5,12 @@ import Card from "@/modules/home/components/Card";
 
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import GrainImage from "@/assets/images/grain.jpg";
 
 import styles from './Projects.module.css';
 
 const Projects = () => {
   return (
-    <section id={styles["projects"]}>
+    <section id="projects" className={styles.projects}>
       <div className="container">
         <SectionHeader>
           <SectionHeader.EyeBrow>Performance improvements</SectionHeader.EyeBrow>
@@ -22,8 +21,12 @@ const Projects = () => {
         </SectionHeader>
 
         <div className={styles.info}>
-          {portfolioProjects.map((project) => (
-            <Card key={project.id} className={styles.cardPadding}>
+          {portfolioProjects.map((project, projectIndex) => (
+            <Card
+              key={project.id}
+              className={styles.cardPadding}
+              style={{ top: `calc(100px + ${projectIndex * 20}px)` }}
+            >
               <div className={styles.content}>
                 <div className={styles.contentFirstColumn}>
                   <div className={styles["company-name_year"]}>
@@ -41,10 +44,16 @@ const Projects = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.url} className={styles.projectCTA}>
-                    <span>Visit Live Site</span>
-                    <ArrowUpRightIcon className={styles.projectCTAIcon} />
-                  </a>
+                  <div className={styles.projectCTAWrapper}>
+                    <a 
+                      href={project.url}
+                      className={styles.projectCTA}
+                      target="_blank"
+                    >
+                      <span>Visit Live Site</span>
+                      <ArrowUpRightIcon className={styles.projectCTAIcon} />
+                    </a>
+                  </div>
                 </div>
                 <div className={styles.contentFirstColumn}>
                   <Image
@@ -52,7 +61,7 @@ const Projects = () => {
                     src={project.image}
                     alt={project.title}
                     width={800}
-                    height={500}
+                    height={700}
                   />
                 </div>
               </div>

@@ -3,12 +3,13 @@
 }
 
 .wrapper {
-  @apply mt-16 lg:mt-24 flex overflow-x-clip
+  @apply mt-12 py-4 pr-8 lg:mt-20 flex overflow-x-clip
     [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)];
 }
 
 .testimonialsContainer {
-  @apply flex gap-8 flex-none;
+  @apply flex gap-8 flex-none animate-move-left
+  [animation-duration:60s] hover:[animation-play-state:paused];
 }
 
 .testimonialHeader {
@@ -16,26 +17,40 @@
 }
 
 .cardClasses {
-  @apply max-w-xs md:max-w-md p-6 md:p-8;
+  @apply max-w-xs md:max-w-md p-6 md:p-8
+    hover:-rotate-3 transition-transform duration-300 ease-in-out;
 }
 
 .imageWrapper {
-  @apply size-14 bg-stone-700 rounded-full
-    inline-flex items-center justify-center flex-shrink-0;
+  @apply size-32 bg-stone-700 rounded-full
+    inline-flex items-center justify-center flex-shrink-0 overflow-hidden;
 }
 
 .image {
-  @apply max-h-full;
+  @apply w-full h-full object-contain;
+}
+
+.info {
+  @apply w-full;
 }
 
 .name {
-  @apply font-semibold;
+  @apply font-semibold text-xl;
 }
 
 .position {
-  @apply text-sm text-white/40;
+  @apply italic text-white/70;
+}
+
+.icon {
+  @apply mt-2 w-full inline-flex justify-end text-gray-400 hover:text-gray-200
+    transition-colors duration-300 ease-in-out;
+}
+
+.icon svg {
+  @apply size-6;
 }
 
 .text {
-  @apply mt-4 text-sm text-white/90 md:mt-6 md:text-base;
+  @apply mt-4 text-lg italic text-gray-300 tracking-wider md:mt-6 md:text-base;
 }

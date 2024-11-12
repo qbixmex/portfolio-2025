@@ -1,5 +1,5 @@
-#contact {
-  @apply py-16 pt-14 lg:py-24 lg:pt-20;
+.contact {
+  @apply py-16 pt-14 lg:py-24 lg:pt-20 relative;
 }
 
 .card {

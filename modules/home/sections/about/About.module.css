@@ -1,5 +1,9 @@
-#about {
-  @apply my-20 lg:my-28;
+.about {
+  @apply my-20 lg:my-28 relative;
+}
+
+.aboutAnchor {
+  @apply absolute -top-20;
 }
 
 .cardClasses {
@@ -16,6 +20,14 @@
 
 .readingImageWrapper {
   @apply w-40 mx-auto mt-2 md:mt-0;
+}
+
+.scrollLeft {
+  @apply animate-move-left [animation-duration:60s];
+}
+
+.scrollRight {
+  @apply animate-move-right [animation-duration:30s];
 }
 
 .cardsHobbiesAndMap {
@@ -61,16 +73,28 @@
 }
 
 .mapImage {
-  @apply w-full h-full object-cover object-left-top;
+  @apply w-full h-full object-cover object-center;
 }
 
 .mapIconContainer {
-  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-    bg-gradient-to-r from-emerald-300 to-sky-400
-    rounded-full
-    after:content-[''] after:absolute after:box-border after:inset-0 after:rounded-full after:border-2 after:border-white/40;
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-12
+    rounded-full after:absolute after:content-[''] after:inset-0
+    after:rounded-full grid place-content-center;
+}
+
+.mapIconBackground,
+.mapIconAnimation {
+  @apply absolute inset-0 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full opacity-50;
+}
+
+.mapIconBackground {
+  @apply -z-20;
+}
+
+.mapIconAnimation {
+  @apply -z-10 animate-ping [animation-duration:2s];
 }
 
 .mapIcon {
-  @apply size-[50px] rotate-[20deg] p-5 box-content;
+  @apply !size-7 rotate-[25deg];
 }
