@@ -44,10 +44,16 @@ const Projects = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.url} className={styles.projectCTA}>
-                    <span>Visit Live Site</span>
-                    <ArrowUpRightIcon className={styles.projectCTAIcon} />
-                  </a>
+                  <div className={styles.projectCTAWrapper}>
+                    <a 
+                      href={project.url}
+                      className={styles.projectCTA}
+                      target="_blank"
+                    >
+                      <span>Visit Live Site</span>
+                      <ArrowUpRightIcon className={styles.projectCTAIcon} />
+                    </a>
+                  </div>
                 </div>
                 <div className={styles.contentFirstColumn}>
                   <Image
@@ -55,7 +61,7 @@ const Projects = () => {
                     src={project.image}
                     alt={project.title}
                     width={800}
-                    height={500}
+                    height={700}
                   />
                 </div>
               </div>

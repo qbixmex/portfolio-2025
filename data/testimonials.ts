@@ -1,10 +1,10 @@
 import { StaticImageData } from "next/image";
 
-import hugo_bibriesca_balboa from "@/assets/images/hugo-bibriesca-balboa.png";
-import rafael_massimo from "@/assets/images/rafael-massimo.png";
-import bart_kang from "@/assets/images/bart_kang.png";
-import daniel_santos from "@/assets/images/daniel_santos.png";
-import rogelio_martinez from "@/assets/images/rogelio_martinez.png";
+import hugo_bibriesca_balboa from "@/assets/images/testimonials/hugo-bibriesca-balboa.png";
+import rafael_massimo from "@/assets/images/testimonials/rafael-massimo.png";
+import bart_kang from "@/assets/images/testimonials/bart_kang.png";
+import daniel_santos from "@/assets/images/testimonials/daniel_santos.png";
+import rogelio_martinez from "@/assets/images/testimonials/rogelio_martinez.png";
 
 export interface Testimonial {
   id: string;
