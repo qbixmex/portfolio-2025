@@ -1,0 +1,45 @@
+.formGroup {
+  @apply flex flex-col items-start md:items-center md:flex-row gap-5 mb-5;
+}
+
+.formLabel {
+  @apply text-base font-medium text-stone-800;
+}
+
+.formInput,
+.formTextArea {
+  @apply w-full rounded-md border border-stone-800/50 bg-white/20
+    text-base font-normal italic text-emerald-950 outline-none
+    focus:border focus:border-white focus:bg-white/30
+}
+
+.formInput {
+  @apply py-2 px-4;
+}
+
+.formGroupMessage {
+  @apply flex flex-col items-start gap-5 mb-5;
+}
+
+.formTextArea {
+  @apply p-4 resize-none;
+}
+
+.sendGroup {
+  @apply flex justify-end;
+}
+
+.formButton {
+  @apply bg-stone-900 text-gray-50 inline-flex items-center justify-center gap-2
+    px-6 h-12 rounded-xl w-full md:w-max 
+    hover:bg-stone-50 hover:text-gray-800
+    transition-colors duration-300 ease-in-out;
+
+  & span {
+    @apply font-semibold font-serif;
+  }
+
+  & svg {
+    @apply size-4;
+  }
+}

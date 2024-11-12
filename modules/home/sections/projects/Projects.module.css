@@ -1,5 +1,5 @@
 .projects {
-  @apply pb-16 md:py-24;
+  @apply p-0;
 }
 
 .info {
@@ -7,11 +7,11 @@
 }
 
 .content {
-  @apply lg:grid lg:grid-cols-2 lg:gap-16 lg:pt-16 lg:px-20;
+  @apply grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16 lg:pt-16 lg:px-20;
 }
 
 .cardPadding {
-  @apply px-8 pt-8 pb-0 md:pt-12 md:px-10 sticky;
+  @apply p-8 sticky;
 }
 
 .projectHeading {
@@ -35,6 +35,10 @@
   @apply flex gap-2 text-sm text-white/50 md:text-base;
 }
 
+.projectCTAWrapper {
+  @apply md:text-center;
+}
+
 .projectCTA {
   @apply bg-stone-50 text-stone-950
     rounded-full font-semibold font-serif
@@ -50,8 +54,8 @@
 }
 
 .projectImage {
-  @apply mt-8 -mb-4 md:mb-0
-    lg:mt-0 lg:absolute lg:h-full lg:max-w-none;
+  @apply rounded-2xl border-2 border-white/20 h-[400px] object-cover object-top
+    lg:h-auto lg:object-none;
 }
 
 .company-name_year {
