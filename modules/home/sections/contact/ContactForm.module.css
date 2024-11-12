@@ -1,9 +1,13 @@
+.formField {
+  @apply mb-5;
+}
+
 .formGroup {
-  @apply flex flex-col items-start md:items-center md:flex-row gap-5 mb-5;
+  @apply w-full flex flex-col items-start md:items-center md:flex-row gap-5;
 }
 
 .formLabel {
-  @apply text-base font-medium text-stone-800;
+  @apply text-base font-medium text-stone-800 md:min-w-[80px];
 }
 
 .formInput,
@@ -25,6 +29,15 @@
   @apply p-4 resize-none;
 }
 
+.formFieldError {
+  @apply text-red-700 !border-red-700 text-sm font-semibold italic !bg-red-100;
+}
+
+.formErrorMessage {
+  @apply ml-2 mt-3 text-red-500 text-sm font-semibold italic before:content-['*']
+  before:mr-2;
+}
+
 .sendGroup {
   @apply flex justify-end;
 }
@@ -42,4 +55,16 @@
   & svg {
     @apply size-4;
   }
+}
+
+.toast {
+  @apply mb-10 rounded-full px-6 py-3 w-fit font-semibold ml-auto italic;
+}
+
+.toastSuccess {
+  @apply bg-emerald-900 text-emerald-50;
+}
+
+.toastError {
+  @apply bg-red-900 text-red-50;
 }
