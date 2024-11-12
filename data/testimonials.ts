@@ -1,10 +1,10 @@
 import { StaticImageData } from "next/image";
 
-import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
-import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
-import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
-import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
-import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import hugo_bibriesca_balboa from "@/assets/images/hugo-bibriesca-balboa.png";
+import rafael_massimo from "@/assets/images/rafael-massimo.png";
+import bart_kang from "@/assets/images/bart_kang.png";
+import daniel_santos from "@/assets/images/daniel_santos.png";
+import rogelio_martinez from "@/assets/images/rogelio_martinez.png";
 
 export interface Testimonial {
   id: string;
@@ -12,43 +12,49 @@ export interface Testimonial {
   position: string;
   text: string;
   avatar: StaticImageData;
+  linkedIn: string;
 };
 
 const testimonials: Testimonial[] = [
   {
     id: "97473f03-e6e2-4a79-be1a-326e7b633fa1",
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
-    avatar: memojiAvatar1,
+    name: "Hubo B. Balboa",
+    position: "Project manager",
+    text: "Working with Daniel on our landing page has been an incredible experience. What truly sets Daniel apart is the passion they bring to web development and proactive throughout the process, anticipating our needs and ensuring every detail aligned with our vision.",
+    avatar: hugo_bibriesca_balboa,
+    linkedIn: "https://www.linkedin.com/in/hugo-b-balboa-1812b273/",
   },
   {
     id: "e8a020bb-774c-447a-bd67-752d3944837b",
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
-    avatar: memojiAvatar2,
+    name: "Rafael Massimo",
+    position: "Web Developer & Talent Acquisition",
+    text: "Working with Daniel on our Next.js project was truly productive for our team. Daniel stepped up as a natural leader, guiding the project with a clear vision and inspiring everyone involved. His commitment was evident every step of the way and   dedicated to the team to each task with unmatched passion for the web development.",
+    avatar: rafael_massimo,
+    linkedIn: "https://www.linkedin.com/in/rafael--almeida/",
   },
   {
     id: "7c4835e3-969a-4786-b6ac-142d3f9de2e1",
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
-    avatar: memojiAvatar3,
+    name: "Bart Kang",
+    position: "Program Manager | Software Developer",
+    text: "Having Daniel lead our team for the final project was a game-changer. He brought unwavering commitment and dedication, inspiring everyone to give their best as we worked toward creating an outstanding web development product.",
+    avatar: bart_kang,
+    linkedIn: "https://www.linkedin.com/in/byeongjae-bart-kang-71376620b/",
   },
   {
     id: "38b3350c-d9ae-4a21-92c5-160ed723c887",
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
+    name: "Daniel Santos",
+    position: "Digital Artist",
+    text: "Collaborating with Daniel on bringing our UX/UI designs to life was a fantastic experience. Daniel has an incredible eye for detail, ensuring that every design element was translated perfectly into clean, responsive HTML and CSS, ready for production.",
+    avatar: daniel_santos,
+    linkedIn: "https://www.linkedin.com/in/daniel-matts-santos/",
   },
   {
     id: "a0ceb917-9638-46cc-814a-0f8b51cc8bc6",
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-    avatar: memojiAvatar5,
+    name: "Rogelio Martinez",
+    position: "Android Mobile Developer",
+    text: "Collaborating with Daniel on our Android app development was an outstanding experience. He expose expertise as an Android developer shining through every stage of the project. Daniel demonstrated an exceptional commitment to our vision, consistently meeting deadlines, and ensuring top-notch quality in every feature.",
+    avatar: rogelio_martinez,
+    linkedIn: "https://www.linkedin.com/in/rogmg-swdev/",
   },
 ] as const;
 

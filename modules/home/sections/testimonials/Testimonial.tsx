@@ -1,6 +1,7 @@
 import { FC, Fragment, useId } from "react";
 import Card from "@/modules/home/components/Card";
 import Image from "next/image";
+import LinkedInIcon from "@/assets/icons/linkedin.svg";
 import styles from "./Testimonials.module.css";
 import { type Testimonial } from "@/data/testimonials";
 
@@ -25,9 +26,17 @@ const TestimonialCard: FC<Props> = ({ testimonial }) => {
             height={100}
           />
         </figure>
-        <div>
+        <div className={styles.info}>
           <div className={styles.name}>{testimonial.name}</div>
           <div className={styles.position}>{testimonial.position}</div>
+          <div className={styles.icon}>
+            <a href={testimonial.linkedIn}
+              title={`Visit ${testimonial.name} Profile`}
+              target="_blank"
+            >
+              <LinkedInIcon />
+            </a>
+          </div>
         </div>
       </div>
       <p className={styles.text}>{testimonial.text}</p>

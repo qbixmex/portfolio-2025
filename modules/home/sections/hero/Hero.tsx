@@ -204,14 +204,14 @@ const Hero = () => {
         </div>
 
         <div className={styles.buttons}>
-          <button className={styles.explore}>
+          <a href="#projects" className={styles.explore}>
             <span>Explore My Work</span>
             <ArrowDown className={styles.icon} />
-          </button>
-          <button className={styles.connect}>
+          </a>
+          <a href="#contact" className={styles.connect}>
             <span>👋</span>
             <span>Let&apos;s Connect</span>
-          </button>
+          </a>
         </div>
       </div>
     </section>
