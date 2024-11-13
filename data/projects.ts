@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import omega_records from "@/assets/images/projects/homega-records.jpg";
+import omega_records from "@/assets/images/projects/omega-records.jpg";
 import game_hub from "@/assets/images/projects/game-hub.jpg";
 import tesloShop from "@/assets/images/projects/teslo-shop-2024.jpg";
 import { type IconType } from "react-icons";
@@ -29,7 +29,7 @@ const portfolioProjects: Project[] = [
     id: "e9bd8940-e123-4d1e-85af-fd1a8688bfb6",
     company: "Omega Records",
     year: "2020",
-    title: "Recorgins Studio Web Site",
+    title: "Recordings Studio Web Site",
     url: "https://qbixmex.github.io/omega-records/",
     image: omega_records,
     description: "<p>This website showcases a Recording Studio, highlighting its services, state-of-the-art equipment, experienced team, available courses, and a contact page for inquiries.</p><p>It combines a clean design with responsive functionality to deliver an engaging user experience.</p>",
@@ -47,7 +47,7 @@ const portfolioProjects: Project[] = [
     title: "Video Games Platform",
     url: "https://game-hub-qbixmex.vercel.app",
     image: game_hub,
-    description: "<p>This React-based website lets users explore a curated selection of video games, offering powerful filters by platform, genre, and relevance and search functionality.</p><p>Each game has a detailed view, showcasing its description, Metascore, publisher information, and gameplay images for an immersive browsing experience.</p>",
+    description: "<p>This React-based website lets users explore a curated selection of video games, offering powerful filters by platform, genre, and relevance and search functionality.</p><p>Each game has a detailed view, showcasing its description, Metascore, publisher information, and Gameplay images for an immersive browsing experience.</p>",
     tools: [
       { name: "Vite", icon: SiVite },
       { name: "React", icon: FaReact },
