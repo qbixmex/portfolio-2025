@@ -3,10 +3,10 @@ import portfolioProjects from '@/data/projects';
 import SectionHeader from '@/modules/home/components/SectionHeader';
 import Card from "@/modules/home/components/Card";
 
-import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
 import styles from './Projects.module.css';
+import Icon from '../../components/Icon';
 
 const Projects = () => {
   return (
@@ -36,11 +36,21 @@ const Projects = () => {
                   </div>
                   <h3 className={styles.projectHeading}>{project.title}</h3>
                   <hr className={styles.projectDivider} />
+                  <div
+                    className={styles.projectDescription}
+                    dangerouslySetInnerHTML={{ __html: project.description }}
+                  />
                   <ul className={styles.projectResults}>
-                    {project.results.map((result) => (
-                      <li key={result.title} className={styles.projectResult}>
-                        <CheckCircleIcon className={styles.projectIcon} />
-                        {result.title}
+                    {project.tools.map((tool) => (
+                      <li key={tool.name} className={styles.projectResult}>
+                        <span title={tool.name}>
+                          <Icon
+                            component={tool.icon}
+                            fromColor="rgb(110, 231, 183)"
+                            toColor="rgb(56, 189, 248)"
+                            className='!size-8'
+                          />
+                        </span>
                       </li>
                     ))}
                   </ul>
