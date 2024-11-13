@@ -15,12 +15,19 @@
 }
 
 .projectHeading {
-  @apply font-serif text-2xl mt-2
-    md:text-4xl md:mt-5;
+  @apply font-serif text-2xl mt-2 md:text-4xl md:mt-5;
 }
 
 .projectDivider {
   @apply border-t-2 border-white/5 mt-4 md:mt-5;
+}
+
+.projectDescription {
+  @apply my-5 text-pretty tracking-widest leading-6 text-stone-200/50 space-y-5;
+}
+
+.projectToolIcon {
+  @apply size-6;
 }
 
 .projectIcon {
@@ -28,11 +35,11 @@
 }
 
 .projectResults {
-  @apply flex flex-col gap-4 mt-4 md:mt-5;
+  @apply flex flex-wrap gap-2 mt-4 md:mt-5;
 }
 
 .projectResult {
-  @apply flex gap-2 text-sm text-white/50 md:text-base;
+  @apply flex items-center gap-2;
 }
 
 .projectCTAWrapper {
