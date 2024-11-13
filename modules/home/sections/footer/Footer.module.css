@@ -11,7 +11,7 @@
 }
 
 .footerWrapper {
-  @apply border-t border-white/15 py-6 text-sm flex flex-col items-center gap-8;
+  @apply border-t border-white/15 py-6 text-sm flex justify-center items-center gap-16;
 }
 
 .footerCopy {
@@ -19,7 +19,7 @@
 }
 
 .footerLinks {
-  @apply flex flex-wrap items-center justify-center gap-8 md:gap-2;
+  @apply flex flex-wrap items-center justify-center gap-3;
 }
 
 .footerLink {

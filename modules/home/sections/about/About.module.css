@@ -14,12 +14,17 @@
   @apply mt-20 grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3;
 }
 
-.readingCard {
-  @apply flex flex-col gap-8 md:col-span-2 lg:col-span-1;
+.movieCard {
+  @apply flex flex-col lg:col-span-1;
 }
 
-.readingImageWrapper {
-  @apply w-40 mx-auto mt-2 md:mt-0;
+.movieImageWrapper {
+  @apply w-[80%] hover:-translate-y-28
+    transition duration-300 ease-in-out
+    cursor-pointer mx-auto rounded-lg;
+  & img {
+    @apply rounded-lg;
+  }
 }
 
 .scrollLeft {
