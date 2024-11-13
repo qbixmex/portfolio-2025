@@ -4,7 +4,7 @@ import Icon from '@/modules/home/components/Icon';
 import styles from "./About.module.css";
 import { twMerge } from "tailwind-merge";
 import LocationDotIcon from "@/assets/icons/location-dot.svg"
-import MapImage from "@/assets/images/map.png"
+import MapImage from "@/assets/images/about/map.png"
 
 const AboutMap = () => {
   return (
