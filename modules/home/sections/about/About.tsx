@@ -1,5 +1,5 @@
 import SectionHeader from "@/modules/home/components/SectionHeader";
-import AboutReading from "./AboutReading";
+import AboutMovie from "./AboutMovie";
 import AboutToolbox from "./AboutToolbox";
 import AboutHobbies from "./AboutHobbies";
 import AboutMap from "./AboutMap";
@@ -20,7 +20,7 @@ const About = () => {
         </SectionHeader>
 
         <div className={styles.cardsReadingAndToolbox}>
-          <AboutReading />
+          <AboutMovie />
           <AboutToolbox />
         </div>
 
