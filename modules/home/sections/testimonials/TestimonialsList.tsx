@@ -9,7 +9,7 @@ const TestimonialsList: FC = () => {
   return (
     <Fragment key={id}>
       {testimonials.map((testimonial) => (
-        <TestimonialCard testimonial={testimonial} />
+        <TestimonialCard key={id} testimonial={testimonial} />
       ))}
     </Fragment>
   );

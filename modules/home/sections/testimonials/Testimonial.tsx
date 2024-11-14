@@ -1,4 +1,4 @@
-import { FC, Fragment, useId } from "react";
+import { FC, useId } from "react";
 import Card from "@/modules/home/components/Card";
 import Image from "next/image";
 import LinkedInIcon from "@/assets/icons/linkedin.svg";
