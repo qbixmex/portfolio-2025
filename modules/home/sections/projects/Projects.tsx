@@ -13,7 +13,7 @@ const Projects = () => {
     <section id="projects" className={styles.projects}>
       <div className="container">
         <SectionHeader>
-          <SectionHeader.EyeBrow>Performance improvements</SectionHeader.EyeBrow>
+          <SectionHeader.EyeBrow>Portfolio</SectionHeader.EyeBrow>
           <SectionHeader.Title>Latest Projects</SectionHeader.Title>
           <SectionHeader.Description>
             See how I transformed concepts into engaging digital experiences.
