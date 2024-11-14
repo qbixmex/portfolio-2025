@@ -1,5 +1,5 @@
 .projects {
-  @apply p-0;
+  @apply p-0 mb-[150px] lg:mb-10;
 }
 
 .info {
@@ -11,7 +11,7 @@
 }
 
 .cardPadding {
-  @apply p-8 sticky;
+  @apply p-8 lg:sticky;
 }
 
 .projectHeading {
