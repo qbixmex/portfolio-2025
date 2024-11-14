@@ -4,7 +4,7 @@ import styles from "./Testimonials.module.css";
 
 const Testimonials = () => {
   return (
-    <section id={styles["testimonials"]}>
+    <section id={styles.testimonials}>
       <div className="container">
         <SectionHeader>
           <SectionHeader.EyeBrow>Happy Clients</SectionHeader.EyeBrow>
@@ -18,7 +18,7 @@ const Testimonials = () => {
         </SectionHeader>
         <div className={styles.wrapper}>
           <div className={styles.testimonialsContainer}>
-            {new Array(2).fill(0).map(() => (<TestimonialsList />))}
+            {new Array(2).fill(0).map((_,index) => (<TestimonialsList key={index} />))}
           </div>
         </div>
       </div>
