@@ -2,14 +2,14 @@
   @apply py-16 lg:py-24;
 }
 
-.wrapper {
-  @apply mt-12 py-6 pr-8 lg:mt-20 flex overflow-x-clip
+.testimonialsBackground {
+  @apply mt-12 py-6 pl-8 lg:mt-20 flex overflow-x-clip
     [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)];
 }
 
 .testimonialsContainer {
-  @apply flex gap-8 flex-none animate-move-left
-  [animation-duration:45s] hover:[animation-play-state:paused];
+  @apply flex gap-8 flex-none pr-8
+  animate-move-left [animation-duration:45s] hover:[animation-play-state:paused];
 }
 
 .testimonialHeader {
@@ -50,8 +50,4 @@
 
 .icon svg {
   @apply size-6;
-}
-
-.text {
-  @apply mt-4 text-lg italic text-stone-400 hover:text-stone-300 tracking-wider md:mt-6 md:text-base;
 }

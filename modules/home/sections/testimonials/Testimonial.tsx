@@ -4,6 +4,7 @@ import Image from "next/image";
 import LinkedInIcon from "@/assets/icons/linkedin.svg";
 import styles from "./Testimonials.module.css";
 import { type Testimonial } from "@/data/testimonials";
+import TestimonialText from "./TestimonialText";
 
 type Props = {
   testimonial: Testimonial;
@@ -39,7 +40,11 @@ const TestimonialCard: FC<Props> = ({ testimonial }) => {
           </div>
         </div>
       </div>
-      <p className={styles.text}>{testimonial.text}</p>
+
+      <TestimonialText maxChars={200}>
+        {testimonial.text}
+      </TestimonialText>
+
     </Card>
   );
 };
