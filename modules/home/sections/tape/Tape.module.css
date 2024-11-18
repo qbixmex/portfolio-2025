@@ -13,7 +13,7 @@
 }
 
 .wordsList {
-  @apply flex gap-4 pr-4 flex-none py-3 animate-move-left [animation-duration:30s];
+  @apply flex gap-4 pr-4 flex-none py-3 animate-move-left [animation-duration:45s];
 }
 
 .word_star {
