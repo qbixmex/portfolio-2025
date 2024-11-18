@@ -3,7 +3,6 @@ import { FC, Fragment, useId } from "react";
 import testimonials from "@/data/testimonials";
 import TestimonialCard from "./Testimonial";
 
-
 const TestimonialsList: FC = () => {
   const id = useId();
   return (

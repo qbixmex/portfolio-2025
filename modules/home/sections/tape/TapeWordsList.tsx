@@ -6,7 +6,7 @@ const TapeWordsList: FC = () => {
   const id = useId();
   return (
     <Fragment key={id}>
-      {words.map((word) => <TapeWord word={word} />)}
+      {words.map((word, index) => <TapeWord key={`${index}-${id}`} word={word} />)}
     </Fragment>
   );
 };
