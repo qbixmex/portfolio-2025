@@ -7,9 +7,7 @@ const Tape = () => {
       <div className={styles.background}>
         <div className={styles.wrapper}>
           <div className={styles.wordsList}>
-            {new Array(2).fill(0).map((_,index) => (
-              <TapeWords />
-            ))}
+            {['a','b'].map((list) => <TapeWords key={list} />)}
           </div>
         </div>
       </div>

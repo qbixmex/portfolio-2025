@@ -16,9 +16,9 @@ const Testimonials = () => {
             </>
           </SectionHeader.Description>
         </SectionHeader>
-        <div className={styles.wrapper}>
+        <div className={styles.testimonialsBackground}>
           <div className={styles.testimonialsContainer}>
-            {new Array(2).fill(0).map((_,index) => (<TestimonialsList key={index} />))}
+            {['a','b'].map((list) => (<TestimonialsList key={list} />))}
           </div>
         </div>
       </div>
