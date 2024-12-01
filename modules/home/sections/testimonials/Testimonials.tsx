@@ -7,12 +7,12 @@ const Testimonials = () => {
     <section id={styles.testimonials}>
       <div className="container">
         <SectionHeader>
-          <SectionHeader.EyeBrow>Happy Clients</SectionHeader.EyeBrow>
-          <SectionHeader.Title>What Clients Say About Me</SectionHeader.Title>
+          <SectionHeader.Title>Testimonials</SectionHeader.Title>
+          <SectionHeader.EyeBrow>What people say</SectionHeader.EyeBrow>
           <SectionHeader.Description>
-            <>Let my <b>Clients&apos;s Opinions</b>
-              <br />illuminate the value I deliver and<br />
-              See what they say about my <b>Work</b>.
+            <>
+              Check reviews and opinions<br />
+              from my colleges about my skills.
             </>
           </SectionHeader.Description>
         </SectionHeader>

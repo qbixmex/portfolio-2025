@@ -15,5 +15,5 @@
 }
 
 .description {
-  @apply text-sm lg:text-base text-white/60 lg:max-w-sm;
+  @apply text-sm lg:text-base text-white/60;
 }

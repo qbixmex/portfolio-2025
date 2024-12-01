@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
-import { type Skill } from '@/data/skills';
 import Icon from '@/modules/home/components/Icon';
 import styles from './ToolboxItems.module.css';
 import { twMerge } from 'tailwind-merge';
+import Language from '@/interfaces/language';
 
 type Props = {
-  items: Skill[];
+  items: Language[];
   className?: string;
   itemsWrapperClassName?: string;
   fromColor?: string;
@@ -25,10 +25,7 @@ const ToolboxItems: React.FC<Readonly<Props>> = ({
         {new Array(2).fill(0).map((_, index) => (
           <Fragment key={index}>
             {items.map(({ id, title, iconType }) => (
-              <div
-                key={id}
-                className={styles["tech-icon_title"]}
-              >
+              <div key={id} className={styles.techIconTitle}>
                 <Icon
                   component={iconType}
                   fromColor={fromColor}
