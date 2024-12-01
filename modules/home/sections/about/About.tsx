@@ -1,8 +1,6 @@
 import SectionHeader from "@/modules/home/components/SectionHeader";
-import AboutMovie from "./AboutMovie";
 import AboutToolbox from "./AboutToolbox";
-import AboutHobbies from "./AboutHobbies";
-import AboutMap from "./AboutMap";
+import OtherTools from "./OtherTools";
 
 import styles from "./About.module.css";
 
@@ -12,21 +10,19 @@ const About = () => {
       <div id="about" className={styles.aboutAnchor}></div>
       <div className="container">
         <SectionHeader>
-          <SectionHeader.EyeBrow>About Me</SectionHeader.EyeBrow>
-          <SectionHeader.Title>A Glimps Into my World</SectionHeader.Title>
+          <SectionHeader.Title>Skills and Tools</SectionHeader.Title>
+          <SectionHeader.EyeBrow>Tech Stack</SectionHeader.EyeBrow>
           <SectionHeader.Description>
-            Learn more about who I am, what I do, and what inspires me.
+            <>Check out my skills and tools<br />I use to build projects.</>
           </SectionHeader.Description>
         </SectionHeader>
 
         <div className={styles.cardsReadingAndToolbox}>
-          <AboutMovie />
           <AboutToolbox />
         </div>
 
         <div className={styles.cardsHobbiesAndMap}>
-          <AboutHobbies />
-          <AboutMap />
+          <OtherTools />
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@
 }
 
 .cardsReadingAndToolbox {
-  @apply mt-20 grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3;
+  @apply mt-20 grid grid-cols-1 gap-8;
 }
 
 .movieCard {
@@ -36,11 +36,11 @@
 }
 
 .cardsHobbiesAndMap {
-  @apply grid grid-cols-1 md:grid-cols-5 gap-8 mt-8 lg:grid-cols-3;
+  @apply grid grid-cols-1 gap-8 mt-8;
 }
 
 .skillsCard {
-  @apply md:col-span-3 lg:col-span-2;
+  @apply h-auto md:col-span-3 lg:col-span-2;
 }
 
 .skillsCardHeader {
@@ -48,28 +48,30 @@
 }
 
 .hobbiesCard {
-  @apply flex flex-col p-0 md:col-span-3 lg:col-span-2;
+  @apply h-auto flex flex-col pb-10 md:col-span-3 lg:col-span-2;
 }
 
 .hobbiesCardHeader {
   @apply p-6;
 }
 
-.hobbies {
-  @apply relative flex-1;
+.otherTools {
+  @apply grid grid-cols-2 gap-5 px-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5;
 }
 
-.hobby {
-  @apply absolute inline-flex gap-2 items-center px-6 py-1.5
-    bg-gradient-to-r from-emerald-400 to-sky-400
-    rounded-full;
+.tool {
+  @apply flex justify-center items-center gap-2 p-5 border border-stone-500 rounded-lg;
 }
 
-.hobbyTitle {
-  @apply font-medium text-stone-900;
+.toolTitle {
+  @apply font-medium text-stone-100;
 }
 
-.hobbyEmoji {
+.toolIconSvg {
+  @apply size-6;
+}
+
+.toolIcon {
   @apply text-2xl;
 }
 
