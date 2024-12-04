@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Orbitron } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import mainMetadata from "@/data/metadata";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -13,10 +14,7 @@ const orbitron = Orbitron({
   variable: '--font-serif',
 });
 
-export const metadata: Metadata = {
-  title: "My Web Developer Portfolio",
-  description: "Web developer portfolio made with Next.js",
-};
+export const metadata = mainMetadata;
 
 type Props = { children: React.ReactNode };
 
