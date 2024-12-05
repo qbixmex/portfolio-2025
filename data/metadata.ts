@@ -14,17 +14,17 @@ const mainMetadata: Metadata = {
     url: "https://qbix-portfolio.vercel.app/",
     images: [
       {
-        url: 'https://nextjs.org/images/qbix-portfolio-app-desktop.jpg',
+        url: 'https://qbix-portfolio.vercel.app/images/qbix-portfolio-app-desktop.jpg',
         width: 1280,
         height: 834,
       },
       {
-        url: 'https://nextjs.org/images/qbix-portfolio-app-tablet.jpg',
+        url: 'https://qbix-portfolio.vercel.app/images/qbix-portfolio-app-tablet.jpg',
         width: 1226,
         height: 1500,
       },
       {
-        url: 'https://nextjs.org/images/qbix-portfolio-app-mobile.jpg',
+        url: 'https://qbix-portfolio.vercel.app/images/qbix-portfolio-app-mobile.jpg',
         width: 679,
         height: 1220,
       },
