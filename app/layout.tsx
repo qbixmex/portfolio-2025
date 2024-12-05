@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter, Orbitron } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
