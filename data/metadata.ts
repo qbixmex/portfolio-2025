@@ -32,6 +32,18 @@ const mainMetadata: Metadata = {
     locale: "en_CA",
     type: "profile",
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Web Developer Portfolio',
+    description: 'Web developer portfolio made with Next.js',
+    siteId: '@qbixmex',
+    creator: 'Daniel González',
+    images: [
+      'https://qbix-portfolio.vercel.app/images/qbix-portfolio-app-desktop.jpg',
+      'https://qbix-portfolio.vercel.app/images/qbix-portfolio-app-tablet.jpg',
+      'https://qbix-portfolio.vercel.app/images/qbix-portfolio-app-mobile.jpg'
+    ],
+  },
 };
 
 export default mainMetadata;
