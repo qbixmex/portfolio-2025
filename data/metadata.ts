@@ -39,8 +39,6 @@ const mainMetadata: Metadata = {
     siteId: '@qbixmex',
     creator: 'Daniel González',
     images: [
-      'https://qbix-portfolio.vercel.app/images/qbix-portfolio-app-desktop.jpg',
-      'https://qbix-portfolio.vercel.app/images/qbix-portfolio-app-tablet.jpg',
       'https://qbix-portfolio.vercel.app/images/qbix-portfolio-app-mobile.jpg'
     ],
   },
